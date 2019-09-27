@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="refresh" content="0; url=https://apps.apple.com/us/app/ttareungyi/id1474738378?mt=8">
+		<script>
+			const languageComponents = navigator.language.toLowerCase().split("-")
+			window.location.replace(`https://apps.apple.com/${languageComponents[1] || "us"}/app/ttareungyi/id1474738378?l=${languageComponents[0] || "en"}`)
+		</script>
 	</head>
 </html>
